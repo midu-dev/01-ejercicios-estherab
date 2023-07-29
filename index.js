@@ -9,7 +9,6 @@ Si el archivo ya existe, debe ser reemplazado. Si el path no existe, debe ser cr
 
 Pistas: fs.mkdir puede crear directorios que no existen. Revisa la documentación de Node.js para ver cómo 
 se usa y sus posibles opciones. */
-const path = require('node:path');
 const fs = require('node:fs/promises')
 
 async function writeFile (filePath, data, callback) {
