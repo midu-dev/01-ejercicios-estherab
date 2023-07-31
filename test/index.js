@@ -19,7 +19,7 @@ test('2. writeFile', (t, done) => {
     // check if file exists
     assert.strictEqual(fs.existsSync(filePath), true)
     // remove tmp folder
-    fs.rmSync('tmp', { recursive: true })
+    //fs.rmSync('tmp', { recursive: true })
     done()
   })
 })
@@ -46,7 +46,7 @@ test.describe('3. readFileAndCount', () => {
     // call readFileAndCount
     readFileAndCount('node', (err, count) => {
       // remove tmp folder
-      fs.rmSync('tmp', { recursive: true })
+      // fs.rmSync('tmp', { recursive: true })
       assert.ifError(err)
       assert.strictEqual(count, 3)
       done()
